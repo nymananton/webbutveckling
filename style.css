@@ -1,0 +1,244 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* NAVBAR */
+div.nav {
+    background-color: #40984b;
+    width: 100%;
+    height: 5em;
+}
+
+ul.nav {
+    list-style-type: none;
+    margin: 0;
+}
+
+li.nav {
+    float: left;
+    padding: 1.5em 0;
+}
+
+li.nav:hover {
+    background-color: #357b3e;
+}
+
+li.nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5em;
+    padding: 35% 1em;
+}
+
+li.nav a:active {
+    background-color: #357b3e;
+}
+
+/* FOOTER */
+
+footer {
+    width: 100%;
+    padding: 1.5em 0;
+    background-color: #40984b;
+}
+
+footer.bottom {
+    position: fixed;
+    bottom: 0;
+}
+
+footer p {
+    font-size: 1.2em;
+    list-style-type: none;
+    color: white;
+    width: 100%;
+    text-align: center;
+}
+
+/* DROPDOWN */
+
+li.dropdown {
+    overflow: hidden;
+    height: 0;
+    width: 0;
+    float: right;
+    display: none;
+}
+
+div.dropdown{
+    height: 100%;
+    width: 100%;
+}
+
+p.dropdown {
+    color: white;
+    font-weight: bold;
+    background-color: inherit;
+    text-align: center;
+    font-size: 3.75em;
+}
+
+p.dropdown:hover {
+    background-color: #357b3e;
+}
+
+div.dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    min-width: 3em;
+}
+
+a.dropdown-content {
+    float: none;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #40984b;
+    display: block;
+    text-align: left;
+    padding: 0.5em;
+}
+
+a.dropdown-content:hover {
+    background-color: #357b3e;
+}
+
+a.dropdown-content:hover + p.dropdown {
+    background-color: #357b3e;
+}
+
+li.dropdown:hover div.dropdown-content {
+    display: block;
+}
+
+@media screen and (max-width: 1170px) {
+    li.dropdown {
+        display: block;
+        height: 5em;
+        width: inherit;
+    }
+
+    .a {
+        display: none;
+        size: 0;
+    }
+}
+
+/* INDEX */
+
+div.titel {
+    width: 100%;
+    text-align: center;
+    height: calc(100vh - 9.6em);
+    background-image: url(https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvLWEwMTAtbWFya3Vzcy0wNDMzLmpwZw.jpg);
+}
+
+h1.titel {
+    color: white;
+    margin: 0 0 0 0;
+}
+
+img.titel {
+    width: 40%;
+    margin: 2em 0 0 0;
+}
+
+.indexinfo {
+    margin: 1em;
+}
+
+.index {
+    text-align: center;
+}
+
+/* GEMENSAMMA */
+
+.kurstitel {
+    text-decoration: underline;
+    text-decoration-color: #40984b;
+    text-align: center;
+    margin: 0.5em 0;
+}
+
+/* DATORNS DELAR */
+
+.datordel {
+    background-color: lightgray;
+    margin: 0.5em;
+    padding: 0.5em;
+}
+
+h3.deltitel {
+    text-decoration: underline;
+    text-decoration-color: #40984b;
+    text-decoration-thickness: 0.1em;
+}
+
+.delbild {
+    width: 20%;
+}
+
+/* ATT VÄLJA DELAR */
+
+.delval {
+    background-color: lightgray;
+    margin: 0.5em;
+    padding: 0.5em;
+    display: flex; 
+    max-height: calc(100vh - 9.6vh);
+}
+
+.delvaltxt {
+    width: 45%;
+    border: 1px solid black;
+    margin: 0 2.5%;
+    overflow: auto;
+}
+
+.delvalimg {
+    width: 45%;
+    float: right;
+    margin: 0 2.5%;
+}
+
+.deltxt {
+    margin: 0.5em;
+}
+
+/* INSTALLATION */
+
+ul.inst {
+    display: flex;
+    list-style-type: none;
+    width: 100%;
+}
+
+li.inst {
+    float: left;
+    margin: 0 auto;
+    padding: 1em 0.5em;
+}
+
+div.inststyle {
+    display: none;
+    background-color: lightgray;
+    padding: 1em;
+    margin: 1em;
+}
+
+.inststyle.active {
+    display: block;
+}
+
+a.inst {
+    text-decoration: none;
+    
+}
+
+.instimg {
+    width: 20%;
+}
